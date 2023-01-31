@@ -1,6 +1,7 @@
 <script>
 import CreateMenu from './CreateMenu.vue';
 export default {
+    name: 'AppHeader',
     components: { CreateMenu }
 }
 </script>

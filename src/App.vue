@@ -12,5 +12,8 @@ export default {
 </template>
 
 <style>
-
+* {
+  font-family: 'Alegreya', serif;
+  font-family: 'Domine', serif;
+}
 </style>

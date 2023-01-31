@@ -1,10 +1,11 @@
 <script>
 import { store } from '../store'
 export default {
+    name: 'CreateMenu',
     data() {
         return {
             store,
-            currentPage: "0"
+            currentPage: 0,
         }
 
     }, methods: {
@@ -33,6 +34,6 @@ a {
 }
 
 .active {
-    border-bottom: 2px solid pink;
+    border-bottom: 5px solid pink;
 }
 </style>
