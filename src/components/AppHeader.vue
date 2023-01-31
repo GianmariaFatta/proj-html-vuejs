@@ -1,6 +1,7 @@
 <script>
+import CreateMenu from './CreateMenu.vue';
 export default {
-
+    components: { CreateMenu }
 }
 </script>
 
@@ -11,7 +12,9 @@ export default {
                 <div class="col-6 p-4 ">
                     <img src="../../src/assets/img/logo-sidearea-1.png" alt="">
                 </div>
-                <div class="col-5"></div>
+                <div class="col-5">
+                    <CreateMenu />
+                </div>
                 <div class="col-1">
                     <img src="../../src/assets/img/svg/svg-1.svg" alt="">
                 </div>
@@ -24,7 +27,7 @@ export default {
 <style scoped lang="scss" >
 header {
     width: 100%;
-    height: 100px;
+    min-height: 100px;
     border: 2px dashed black
 }
 </style>
