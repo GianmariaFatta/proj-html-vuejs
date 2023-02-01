@@ -18,10 +18,10 @@ export default {
                     <button class="mt-3" type="submit">READ MORE</button>
                 </div>
                 <div class="col-3">
-                    <img class="img-fluid" src="../assets/img/h-2-slider-img-15.png" alt="">
+                    <img class="" src="../assets/img/h-2-slider-img-15.png" alt="">
                 </div>
                 <div class="col-3">
-                    <img class="img-fluid" src="../assets/img/h-2-slider-img-16.png" alt="">
+                    <img class="" src="../assets/img/h-2-slider-img-16.png" alt="">
                 </div>
                 <div class="d-flex justify-content-center align-items-center p-2">
                     <i class="fa-solid fa-xs fa-circle p-2"></i>
@@ -58,6 +58,16 @@ export default {
         font-size: 15px;
     }
 
+}
+
+.col-3 {
+    border: 2px solid green;
+    height: 100%;
+
+    img {
+        width: 90%;
+        object-fit: cover;
+    }
 }
 
 .prev,
