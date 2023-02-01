@@ -37,11 +37,11 @@ export default {
 .row {
     height: 500px;
     width: 100%;
-    border: 2px dashed blue
+    // border: 2px dashed blue
 }
 
 .row .col-6 {
-    border: 2px dashed gold;
+    // border: 2px dashed gold;
 
     height: 500px;
 
@@ -61,7 +61,7 @@ export default {
 }
 
 .col-3 {
-    border: 2px solid green;
+    // border: 2px solid green;
     height: 100%;
 
     img {

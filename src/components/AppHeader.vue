@@ -29,6 +29,6 @@ export default {
 header {
     width: 100%;
     min-height: 100px;
-    border: 2px dashed black
+    // border: 2px dashed black
 }
 </style>
