@@ -1,6 +1,7 @@
 <script>
 import { store } from '../store'
 import CreateCard from './CreateCard.vue';
+import CreateBlog from './CreateBlog.vue';
 export default {
     name: 'AppMain',
     data() {
@@ -29,7 +30,7 @@ export default {
             ]
         }
     },
-    components: { CreateCard },
+    components: { CreateCard, CreateBlog },
 }
 </script>
 
@@ -64,6 +65,7 @@ export default {
             <a href=""><button>CONTACT</button></a>
         </div>
     </div>
+    <CreateBlog />
 </template>
 
 <style scoped lang="scss">
@@ -82,7 +84,7 @@ export default {
     padding: 10px;
     background-image: url(../assets/img/svg/svg-3.svg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-position: 60px 23px;
     height: 250px;
 }
 
