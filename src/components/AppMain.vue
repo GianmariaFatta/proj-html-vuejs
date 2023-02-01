@@ -6,6 +6,27 @@ export default {
     data() {
         return {
             store,
+            phases: [{
+                icon: "fa-solid fa-lightbulb fa-2xl fs-1",
+                title: "First theres an idea",
+                paragraph: "Lorem ipsum dolor sit, conetu adipisc sed be et ore aliqua pleasure itself.",
+            },
+            {
+                icon: "fa-regular fa-comment fa-2xl fs-1",
+                title: "Then we talk about",
+                paragraph: "Lorem ipsum dolor sit, conetu adipisc sed be et ore aliqua pleasure itself.",
+            },
+            {
+                icon: "fa-solid fa-cloud fa-2xl fs-1",
+                title: "And we think about",
+                paragraph: "Lorem ipsum dolor sit, conetu adipisc sed be et ore aliqua pleasure itself.",
+            },
+            {
+                icon: "fa-solid fa-pen-ruler fa-2xl fs-1",
+                title: "So we draw along",
+                paragraph: "Lorem ipsum dolor sit, conetu adipisc sed be et ore aliqua pleasure itself.",
+            },
+            ]
         }
     },
     components: { CreateCard },
@@ -22,38 +43,14 @@ export default {
         <div class="process-box">
             <h2>Working <b><i>process</i></b></h2>
             <div class="row work-process d-flex justify-content-bewtween align-items-center ">
-                <div
+                <div v-for="(phase, i) in phases" :key="i"
                     class="col-3 text-center d-flex flex-column align-items-center d-flex flex-column align-items-center">
                     <div class="d-flex align-items-center justify-content-center mb-2">
-                        <i class="fa-solid fa-lightbulb fa-2xl fs-1"></i>
+                        <i :class="phase.icon"></i>
                     </div>
-                    <h4>First theres an idea</h4>
-                    <p>Lorem ipsum dolor sit, conetu adipisc sed be et ore aliqua pleasure itself. </p>
+                    <h4>{{ phase.title }}</h4>
+                    <p>{{ phase.paragraph }}</p>
                 </div>
-                <div class="col-3 text-center d-flex flex-column align-items-center  ">
-                    <div class="d-flex align-items-center justify-content-center mb-2">
-                        <i class="fa-regular fa-comment fa-2xl fs-1"></i>
-                    </div>
-                    <h4>Then we talk about</h4>
-                    <p>Lorem ipsum dolor sit, conetu adipisc sed be et ore aliqua pleasure itself. </p>
-                </div>
-                <div class="col-3 text-center d-flex flex-column align-items-center ">
-                    <div class="d-flex align-items-center justify-content-center mb-2 ">
-                        <i class="fa-solid fa-cloud fa-2xl fs-1"></i>
-                    </div>
-                    <h4>And we think about</h4>
-                    <p>Lorem ipsum dolor sit, conetu adipisc sed be et ore aliqua pleasure itself. </p>
-                </div>
-                <div class="col-3 text-center d-flex flex-column align-items-center ">
-                    <div class="d-flex align-items-center justify-content-center mb-2">
-                        <i class="fa-solid fa-pen-ruler fa-2xl fs-1"></i>
-                    </div>
-                    <h4>So we draw along</h4>
-                    <p>Lorem ipsum dolor sit, conetu adipisc sed be et ore aliqua pleasure itself. </p>
-                </div>
-
-
-
             </div>
         </div>
     </div>
