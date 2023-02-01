@@ -23,11 +23,11 @@ export default {
                 <div class="col-3">
                     <img class="" src="../assets/img/h-2-slider-img-16.png" alt="">
                 </div>
-                <div class="d-flex justify-content-center align-items-center p-2">
-                    <i class="fa-solid fa-xs fa-circle p-2"></i>
-                    <i class="fa-solid fa-xs fa-circle p-2"></i>
-                    <i class="fa-solid fa-xs fa-circle p-2"></i>
-                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center p-2">
+                <i class="fa-solid fa-xs fa-circle p-2"></i>
+                <i class="fa-solid fa-xs fa-circle p-2"></i>
+                <i class="fa-solid fa-xs fa-circle p-2"></i>
             </div>
         </div>
         <button class="me-5 next"><i class="fa-solid fa-xl fa-circle-arrow-right"></i></button>
@@ -35,7 +35,7 @@ export default {
 </template>
 <style scoped lang="scss">
 .row {
-    min-height: 200px;
+    height: 500px;
     width: 100%;
     border: 2px dashed blue
 }
@@ -43,7 +43,7 @@ export default {
 .row .col-6 {
     border: 2px dashed gold;
 
-    height: 300px;
+    height: 500px;
 
     h2 {
         font-size: 50px;
