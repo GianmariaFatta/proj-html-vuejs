@@ -2,6 +2,7 @@
 import { store } from '../store'
 import CreateCard from './CreateCard.vue';
 import CreateBlog from './CreateBlog.vue';
+import AppFooter from './AppFooter.vue';
 export default {
     name: 'AppMain',
     data() {
@@ -30,7 +31,7 @@ export default {
             ]
         }
     },
-    components: { CreateCard, CreateBlog },
+    components: { CreateCard, CreateBlog, AppFooter },
 }
 </script>
 
@@ -66,6 +67,7 @@ export default {
         </div>
     </div>
     <CreateBlog />
+    <AppFooter />
 </template>
 
 <style scoped lang="scss">
