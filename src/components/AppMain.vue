@@ -54,6 +54,16 @@ export default {
             </div>
         </div>
     </div>
+    <div class="recruiting text-center d-flex align-items-center">
+        <div class="container d-flex flex-column justify-content-center">
+            <h2>Want to work with us? Send us <b><i>a message!</i></b></h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil corrupti ipsum dicta voluptatem adipisci
+                impedit amet hic optio repudiandae explicabo, eius officia quisquam quis dignissimos. Amet ipsam
+                deleniti
+                sint eveniet?</p>
+            <a href=""><button>CONTACT</button></a>
+        </div>
+    </div>
 </template>
 
 <style scoped lang="scss">
@@ -83,21 +93,25 @@ h2 {
     font-size: 50px;
 }
 
-.col-12 {
-
-
-    .card {
-        padding: 20px;
-        height: 400px;
-    }
-}
-
 .col-3 {
     div {
         border-radius: 50%;
         height: 200px;
         width: 70%;
         background-color: #FAF7F1;
+    }
+}
+
+.recruiting {
+    height: 500px;
+    background-image: url(../assets/img/h-2-background-1.jpg);
+
+    button {
+        background-color: #D8F0E3;
+        width: 200px;
+        height: 60px;
+        font-weight: bolder;
+        border: none
     }
 }
 
