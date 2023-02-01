@@ -10,7 +10,7 @@ export default {
 
 <template>
     <div class="col-4 p-0">
-        <div class="card p-0">
+        <div class="card p-0 rounded-0">
             <img class="img-fluid" :src="card" alt="">
         </div>
     </div>
