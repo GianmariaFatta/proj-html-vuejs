@@ -6,6 +6,7 @@ export default {
     name: 'AppMain',
     data() {
         return {
+            isVisible: false,
             store,
             phases: [{
                 icon: "fa-solid fa-lightbulb fa-2xl fs-1",
@@ -29,6 +30,17 @@ export default {
             },
             ]
         }
+    },
+    methods: {
+        goToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        },
+        // onScroll() {
+        //     this.isVisible = window.scrollY >50
+        // }
     },
     components: { CreateCard, CreateBlog },
 }
@@ -66,10 +78,31 @@ export default {
         </div>
     </div>
     <CreateBlog />
-
+    <div class="back-to-top d-flex align-items-center justify-content-center" @click="goToTop()">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
 </template>
 
 <style scoped lang="scss">
+.back-to-top {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 40px;
+    right: 60px;
+    z-index: 2;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #C0E1CF;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+
+
+}
+
 .process-box {
     height: 500px;
 }
