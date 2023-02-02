@@ -11,7 +11,7 @@ export default {
         <div class="container-fluid">
             <div class="row d-flex justify-content-center align-items-center">
                 <div class="col-6 p-4 ">
-                    <img src="../../src/assets/img/logo-sidearea-1.png" alt="">
+                    <img src="../../src/assets/img/logo-sidearea-1-1.png" alt="">
                 </div>
                 <div class="col-5">
                     <CreateMenu />
