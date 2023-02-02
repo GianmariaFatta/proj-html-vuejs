@@ -58,7 +58,8 @@ export default {
 <template>
     <div class="mt-5 d-flex align-items-center ">
         <!-- button right -->
-        <button class="ms-5 prev" @click="goToPrev()"><i class="fa-solid fa-xl fa-circle-arrow-left"></i></button>
+        <div class="ms-5 prev" @click="goToPrev()"><i role="button" class="fa-solid fa-2xl fa-circle-arrow-left"></i>
+        </div>
         <div class="container">
             <div class="row">
 
@@ -83,7 +84,8 @@ export default {
             </div>
         </div>
         <!-- button next -->
-        <button @click="goToNext()" class="me-5 next"><i class="fa-solid fa-xl fa-circle-arrow-right"></i></button>
+        <div @click="goToNext()" class="me-5 next"><i role="button" class="fa-solid fa-2xl fa-circle-arrow-right"></i>
+        </div>
 
     </div>
 </template>
