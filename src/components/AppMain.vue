@@ -84,6 +84,8 @@ export default {
 </template>
 
 <style scoped lang="scss">
+@use '../assets/scss/variables' as*;
+
 .back-to-top {
     width: 50px;
     height: 50px;
@@ -94,7 +96,7 @@ export default {
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: #C0E1CF;
+    background-color: $light-green;
     color: white;
     cursor: pointer;
     padding: 15px;
@@ -134,7 +136,7 @@ h2 {
         border-radius: 50%;
         height: 200px;
         width: 70%;
-        background-color: #FAF7F1;
+        background-color: $light-pink;
     }
 }
 
@@ -143,17 +145,17 @@ h2 {
     background-image: url(../assets/img/h-2-background-1.jpg);
 
     button {
-        background-color: #f77b72;
+        background-color: $light-orange;
         width: 200px;
         height: 60px;
         font-weight: bolder;
         border: none;
 
         &:hover {
-            background-color: #E1C0B0;
+            background-color: $middle-pink;
 
             a {
-                color: #fff;
+                color: $my_white;
             }
         }
     }
@@ -167,18 +169,18 @@ h2 {
 // color
 
 .fa-lightbulb {
-    color: #BADAC9
+    color: $winter_sky;
 }
 
 .fa-comment {
-    color: #F8D12D
+    color: $money_gold;
 }
 
 .fa-cloud {
-    color: #80465F
+    color: $old_pink;
 }
 
 .fa-pen-ruler {
-    color: #EB6950
+    color: $strong_orange
 }
 </style>

@@ -29,6 +29,8 @@ export default {
 </template>
 
 <style scoped lang="scss">
+@use '../assets/scss/variables' as*;
+
 .row {
     height: 600px;
 }
@@ -38,7 +40,7 @@ export default {
 
 }
 
-.col-4:hover img {}
+
 
 .flag {
     position: absolute;
@@ -49,13 +51,13 @@ export default {
 #flag-top {
     width: 70px;
     height: 65px;
-    background-color: #C0E1CF;
+    background-color: $light-green;
 }
 
 #flag-down {
     width: 70px;
     height: 85px;
-    background-color: #F3D0C7;
+    background-color: $sweet_pink;
     clip-path: polygon(50% 30%, 100% 40%, 100% -100%, -50% 50%);
 }
 </style>

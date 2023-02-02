@@ -88,6 +88,8 @@ export default {
     </div>
 </template>
 <style scoped lang="scss">
+@use '../assets/scss/variables' as*;
+
 .row {
     height: 500px;
     width: 100%;
@@ -106,14 +108,14 @@ export default {
 
     button {
         padding: 10px;
-        border: 3px solid pink;
-        background-color: #fff;
+        border: 3px solid $sweet_pink;
+        background-color: $my_white;
         font-size: 15px;
         width: 40%;
 
         &:hover {
-            background-color: #D8F0E3;
-            color: #fff
+            background-color: $light_orange;
+            color: $my_white
         }
     }
 
@@ -147,11 +149,12 @@ export default {
 .prev,
 .next {
     border: none;
-    color: pink;
+    color: $sweet_pink;
+    ;
 }
 
 .fa-circle {
-    color: pink;
+    color: $sweet_pink;
     cursor: pointer
 }
 

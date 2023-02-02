@@ -24,7 +24,9 @@ export default {
 
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+@use '../assets/scss/variables' as*;
+
 li {
     list-style-type: none;
     margin-top: 20px
@@ -36,6 +38,6 @@ a {
 }
 
 .active {
-    border-bottom: 5px solid pink;
+    border-bottom: 5px solid $sweet_pink;
 }
 </style>

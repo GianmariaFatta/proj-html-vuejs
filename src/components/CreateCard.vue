@@ -22,6 +22,8 @@ export default {
 </template>
 
 <style scoped lang="scss">
+@use '../assets/scss/variables' as*;
+
 .col-4 {
     height: 650px;
     // border: 2px dashed orange
@@ -45,7 +47,7 @@ export default {
     left: 0;
     width: 45%;
     height: 15%;
-    background-color: #fff;
+    background-color: $my_white;
 }
 
 .card:hover .mini-banner {
