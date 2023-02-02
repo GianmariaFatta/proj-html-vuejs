@@ -23,7 +23,7 @@ export default {
 
 <style scoped lang="scss">
 .col-4 {
-    height: 550px;
+    height: 650px;
     // border: 2px dashed orange
 }
 

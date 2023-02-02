@@ -2,8 +2,9 @@
 import AppHeader from './components/AppHeader.vue';
 import CreateJumbo from './components/CreateJumbo.vue';
 import AppMain from './components/AppMain.vue';
+import AppFooter from './components/AppFooter.vue';
 export default {
-  components: { AppHeader, CreateJumbo, AppMain }
+  components: { AppHeader, CreateJumbo, AppMain, AppFooter }
 }
 </script>
 
@@ -11,7 +12,7 @@ export default {
   <AppHeader />
   <CreateJumbo />
   <AppMain />
-  <footer></footer>
+  <AppFooter />
 </template>
 
 <style>

@@ -40,10 +40,7 @@ export default {
                         <p>Stay in touch with us</p>
                     </a>
                     <div class="d-flex ustify-content-between gap-4">
-                        <a v-for="(icon, i) in icons" :key="i" href="#">
-                            <i :class="icon"></i>
-
-                        </a>
+                        <a v-for="(icon, i) in icons" :key="i" href="#"> <i :class="icon"></i> </a>
                     </div>
                 </div>
             </div>
@@ -59,7 +56,15 @@ footer {
 
     a {
         text-decoration: none;
-        color: #000
+        color: #000;
+    }
+
+    i {
+        cursor: pointer;
+
+        &:hover {
+            color: #E1C0B0;
+        }
     }
 }
 

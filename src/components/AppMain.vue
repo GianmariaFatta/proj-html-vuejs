@@ -2,7 +2,6 @@
 import { store } from '../store'
 import CreateCard from './CreateCard.vue';
 import CreateBlog from './CreateBlog.vue';
-import AppFooter from './AppFooter.vue';
 export default {
     name: 'AppMain',
     data() {
@@ -31,14 +30,14 @@ export default {
             ]
         }
     },
-    components: { CreateCard, CreateBlog, AppFooter },
+    components: { CreateCard, CreateBlog },
 }
 </script>
 
 <template>
     <div class="container-fluid p-0">
         <div class="row d-flex justify-content-center align-items-center m-0">
-            <CreateCard v-for="(card, i) in store.cardsMain" :key="card" :card="card" />
+            <CreateCard v-for="(card, i) in store.cardsMain" :key="i" :card="card" />
         </div>
     </div>
     <div class="container">
@@ -67,7 +66,7 @@ export default {
         </div>
     </div>
     <CreateBlog />
-    <AppFooter />
+
 </template>
 
 <style scoped lang="scss">
@@ -111,7 +110,7 @@ h2 {
     background-image: url(../assets/img/h-2-background-1.jpg);
 
     button {
-        background-color: #D8F0E3;
+        background-color: #f77b72;
         width: 200px;
         height: 60px;
         font-weight: bolder;

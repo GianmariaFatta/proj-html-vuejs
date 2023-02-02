@@ -89,18 +89,17 @@ export default {
 </template>
 <style scoped lang="scss">
 .row {
-    height: 400px;
+    height: 500px;
     width: 100%;
     // border: 2px dashed blue
 }
 
 .row .col-6 {
     // border: 2px dashed gold;
-
-    height: 400px;
+    height: 500px;
 
     h2 {
-        font-size: 50px;
+        font-size: 65px;
     }
 
     ;
