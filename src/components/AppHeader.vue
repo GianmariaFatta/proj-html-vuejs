@@ -17,7 +17,7 @@ export default {
                     <CreateMenu />
                 </div>
                 <div class="col-1">
-                    <img src="../../src/assets/img/svg/svg-1.svg" alt="">
+                    <img role="button" src="../../src/assets/img/svg/svg-1.svg" alt="">
                 </div>
             </div>
         </div>
@@ -29,6 +29,8 @@ export default {
 header {
     width: 100%;
     min-height: 100px;
+
     // border: 2px dashed black
+
 }
 </style>

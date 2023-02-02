@@ -64,14 +64,14 @@ export default {
 
                 <div v-for="(jumbo, i) in jumbos" class="d-flex  justify-content-center align-items-center">
                     <div v-if="i === currentIndex" class="d-flex  justify-content-center align-items-center">
-                        <div class="col-6 d-flex flex-column align-item-center">
+                        <div class="col-6 d-flex flex-column align-item-center ms-5 me-5">
                             <h2>{{ jumbo.title }}
                                 <span class="d-block">{{ jumbo.title2 }} <b><i>{{ jumbo.specialTitle }}</i></b></span>
                             </h2>
                             <p class="mt-3">{{ jumbo.text }}</p>
                             <button class="mt-3" type="submit">READ MORE</button>
                         </div>
-                        <div class="col-6 d-flex justify-content-right">
+                        <div class="col-6 d-flex justify-content-center p-3 ms-5">
                             <img class="" :src="jumbo.imgA" alt="">
                             <img class="" :src="jumbo.imgB" alt="">
                         </div>
@@ -110,7 +110,12 @@ export default {
         border: 3px solid pink;
         background-color: #fff;
         font-size: 15px;
-        width: 40%
+        width: 40%;
+
+        &:hover {
+            background-color: #D8F0E3;
+            color: #fff
+        }
     }
 
 }

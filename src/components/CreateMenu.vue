@@ -17,20 +17,22 @@ export default {
 </script>
 <template>
     <ul class="d-flex align-items-center justify-content-between">
-        <a :class="{ 'active': i === currentPage }" v-for="(page, i) in store.pages" :key="i" href="#"
-            @click="setCurrentPage(i)">
-            <li><b>{{ page }}</b></li>
-        </a>
+        <li :class="{ 'active': i === currentPage }" v-for="(page, i) in store.pages" :key="i"><a href="#"
+                @click="setCurrentPage(i)"><b>{{ page }}</b> </a></li>
+
     </ul>
 
 </template>
 
 <style scoped>
+li {
+    list-style-type: none;
+    margin-top: 20px
+}
+
 a {
     text-decoration: none;
-    list-style-type: none;
     color: black;
-    margin-top: 20px
 }
 
 .active {

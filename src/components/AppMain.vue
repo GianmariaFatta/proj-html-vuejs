@@ -57,13 +57,13 @@ export default {
         </div>
     </div>
     <div class="recruiting text-center d-flex align-items-center">
-        <div class="container d-flex flex-column justify-content-center">
+        <div class="container d-flex flex-column justify-content-center align-items-center">
             <h2>Want to work with us? Send us <b><i>a message!</i></b></h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil corrupti ipsum dicta voluptatem adipisci
                 impedit amet hic optio repudiandae explicabo, eius officia quisquam quis dignissimos. Amet ipsam
                 deleniti
                 sint eveniet?</p>
-            <a href=""><button>CONTACT</button></a>
+            <button><a href="#">CONTACT</a></button>
         </div>
     </div>
     <CreateBlog />
@@ -115,7 +115,20 @@ h2 {
         width: 200px;
         height: 60px;
         font-weight: bolder;
-        border: none
+        border: none;
+
+        &:hover {
+            background-color: #E1C0B0;
+
+            a {
+                color: #fff;
+            }
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
     }
 }
 
