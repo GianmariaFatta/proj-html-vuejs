@@ -78,6 +78,7 @@ export default {
         </div>
     </div>
     <CreateBlog />
+    <!-- back to top bottom -->
     <div class="back-to-top d-flex align-items-center justify-content-center" @click="goToTop()">
         <i class="fa-solid fa-arrow-up"></i>
     </div>
